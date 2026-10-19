@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "party-demo-worker",
+  // Set this to today's date
+  "compatibility_date": "2026-10-19",
+  "main": "./src/worker.ts",
+  "upload_source_maps": true,
+}
