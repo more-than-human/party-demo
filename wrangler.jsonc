@@ -3,6 +3,21 @@
   "name": "party-demo-worker",
   // Set this to today's date
   "compatibility_date": "2026-10-19",
+  "compatibility_flags": ["nodejs_compat"],
   "main": "./src/worker.ts",
   "upload_source_maps": true,
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "CanvasRoom",
+        "class_name": "CanvasRoom",
+      },
+    ],
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["CanvasRoom"],
+    },
+  ],
 }

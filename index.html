@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>party-demo</title>
+    <title>PartyServer Collaborative Canvas</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="header">
+      <strong>Room: demo-room</strong>
+      <div id="status">Connecting...</div>
+      <div id="user-list"></div>
+      <button id="clear-btn" style="margin-left: auto">Clear Canvas</button>
+    </div>
+    <div id="canvas-container">
+      <canvas id="canvas"></canvas>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

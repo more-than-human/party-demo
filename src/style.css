@@ -1,4 +1,55 @@
 * {
   box-sizing: border-box;
-  font: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+#header {
+  padding: 10px 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#user-list {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.user-tag {
+  background: #e2e8f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.user-tag.self {
+  background: #bfdbfe;
+  font-weight: 600;
+}
+
+#canvas-container {
+  flex: 1;
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  cursor: crosshair;
+  touch-action: none;
 }

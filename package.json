@@ -15,5 +15,8 @@
     "typescript": "~7.0.2",
     "vite": "^8.3.4",
     "wrangler": "^4.151.2"
+  },
+  "dependencies": {
+    "partyserver": "^0.5.10"
   }
 }
